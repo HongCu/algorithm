@@ -23,7 +23,7 @@ def bfs(queue, dx, dy, N, M, matrix) :
           queue.append((nx, ny))
   return queue, matrix
             
-def max_count(queue, N, M, matrix) :
+def max_count(N, M, matrix) :
   max_value = 0
   for i in range(N):
     for j in range(M):
@@ -49,7 +49,7 @@ def main():
 
     bfs(queue, dx, dy, N, M, matrix)
     # 결국 문제에서 원하는 것은 갈 수 있는 안전거리의 최댓값이므로 이를 구해야 한다.
-    print(max_count(queue, N, M, matrix))
+    print(max_count(N, M, matrix))
 
 
 
