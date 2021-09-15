@@ -17,7 +17,7 @@ while start <= end :
     count = 1
     
     for i in range(1, N) :
-        if x[i] >= pre_x + mid: # 간격이
+        if x[i] >= pre_x + mid :
             pre_x = x[i] 
             count += 1 
     # 설치 가능한 집 개수가 C보다 크면 공유기 사이의 거리를 늘린다.
